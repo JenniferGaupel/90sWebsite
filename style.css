@@ -1,0 +1,100 @@
+body {
+    background-image: url('https://shoutitout-a.akamaihd.net/wp-content/uploads/2016/10/90s-website-style.jpg');
+    font-family: 'Comic Sans MS';
+  }
+  
+  .header__marquee--primary {
+    background-color: #fe78ad;
+  }
+  
+  .course-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .course-list__tile {
+    border: 0.1rem solid #000;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 5px;
+    height: 220px;
+    flex: 0 0 220px;
+    vertical-align: middle;
+    background-color: #fff;
+  }
+  
+  blink {
+      -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+      animation: 2s linear infinite condemned_blink_effect;
+  }
+  @-webkit-keyframes condemned_blink_effect { // for android
+      0% {
+          visibility: hidden;
+      }
+      50% {
+          visibility: hidden;
+      }
+      100% {
+          visibility: visible;
+      }
+  }
+  @keyframes condemned_blink_effect {
+      0% {
+          visibility: visible;
+      }
+      25% {
+          visibility: hidden;
+      }
+  /*     50% {
+          visibility: visible;
+      } */
+      75% {
+          visibility: hidden;
+      }
+      100% {
+          visibility: visible;
+      }
+  }
+  
+  .header--wordart {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fe78ad;
+  }
+  
+  .header--wordart.header--rainbow {
+    transform: scale(1, 1.5);
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
+    -ms-transform: scale(1, 1.5);
+  }
+  
+  .header--wordart.header--rainbow .header__text {
+    background: red; 
+    background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
