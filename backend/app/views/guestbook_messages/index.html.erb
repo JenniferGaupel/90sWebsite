@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Guestbook Messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guestbook_messages.each do |guestbook_message| %>
+      <tr>
+        <td><%= guestbook_message.name %></td>
+        <td><%= guestbook_message.message %></td>
+        <td><%= link_to 'Show', guestbook_message %></td>
+        <td><%= link_to 'Edit', edit_guestbook_message_path(guestbook_message) %></td>
+        <td><%= link_to 'Destroy', guestbook_message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guestbook message', new_guestbook_message_path %>
