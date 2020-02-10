@@ -1,4 +1,4 @@
-class class Api::V1::GuestbookMessagesController < ApplicationController
+class GuestbookMessagesController < ApplicationController
   before_action :set_guestbook_message, only: [:show, :edit, :update, :destroy]
 
   # GET /guestbook_messages

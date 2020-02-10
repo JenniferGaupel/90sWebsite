@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200209220456) do
+ActiveRecord::Schema.define(version: 20200210192624) do
 
   create_table "guestbook_messages", force: :cascade do |t|
     t.string   "name"

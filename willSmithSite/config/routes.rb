@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api do
-    namespace :v1 do
-    resources :guestbook_messages
-    end
-  end
-   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :guestbook_messages
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
